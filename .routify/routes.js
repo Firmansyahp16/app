@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.11
- * File generated Wed Mar 22 2023 10:19:19 GMT+0700 (Western Indonesia Time)
+ * File generated Wed Mar 22 2023 19:48:20 GMT+0700 (Western Indonesia Time)
  */
 
 export const __version = "2.18.11"
-export const __timestamp = "2023-03-22T03:19:19.799Z"
+export const __timestamp = "2023-03-22T12:48:20.808Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -48,6 +48,31 @@ export const _tree = {
       "path": "/about",
       "id": "_about",
       "component": () => import('../src/pages/about.svelte').then(m => m.default)
+    },
+    {
+      "isFile": true,
+      "isDir": false,
+      "file": "blank.svelte",
+      "filepath": "/blank.svelte",
+      "name": "blank",
+      "ext": "svelte",
+      "badExt": false,
+      "absolutePath": "/home/tama/Documents/svelte/app/src/pages/blank.svelte",
+      "importPath": "../src/pages/blank.svelte",
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": true,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/blank",
+      "id": "_blank",
+      "component": () => import('../src/pages/blank.svelte').then(m => m.default)
     },
     {
       "isFile": true,
@@ -125,15 +150,67 @@ export const _tree = {
       "component": () => import('../src/pages/login.svelte').then(m => m.default)
     },
     {
-      "isFile": true,
+      "isFile": false,
       "isDir": true,
-      "file": "_reset.svelte",
-      "filepath": "/workspaces/_reset.svelte",
-      "name": "_reset",
-      "ext": "svelte",
+      "file": "workspaces",
+      "filepath": "/workspaces",
+      "name": "workspaces",
+      "ext": "",
       "badExt": false,
-      "absolutePath": "/home/tama/Documents/svelte/app/src/pages/workspaces/_reset.svelte",
+      "absolutePath": "/home/tama/Documents/svelte/app/src/pages/workspaces",
       "children": [
+        {
+          "isFile": true,
+          "isDir": true,
+          "file": "_reset.svelte",
+          "filepath": "/workspaces/[id]/_reset.svelte",
+          "name": "_reset",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/home/tama/Documents/svelte/app/src/pages/workspaces/[id]/_reset.svelte",
+          "children": [
+            {
+              "isFile": true,
+              "isDir": false,
+              "file": "index.svelte",
+              "filepath": "/workspaces/[id]/index.svelte",
+              "name": "index",
+              "ext": "svelte",
+              "badExt": false,
+              "absolutePath": "/home/tama/Documents/svelte/app/src/pages/workspaces/[id]/index.svelte",
+              "importPath": "../src/pages/workspaces/[id]/index.svelte",
+              "isLayout": false,
+              "isReset": false,
+              "isIndex": true,
+              "isFallback": false,
+              "isPage": true,
+              "ownMeta": {},
+              "meta": {
+                "recursive": true,
+                "preload": false,
+                "prerender": true
+              },
+              "path": "/workspaces/:id/index",
+              "id": "_workspaces__id_index",
+              "component": () => import('../src/pages/workspaces/[id]/index.svelte').then(m => m.default)
+            }
+          ],
+          "isLayout": true,
+          "isReset": true,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": false,
+          "importPath": "../src/pages/workspaces/[id]/_reset.svelte",
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/workspaces/:id",
+          "id": "_workspaces__id__reset",
+          "component": () => import('../src/pages/workspaces/[id]/_reset.svelte').then(m => m.default)
+        },
         {
           "isFile": true,
           "isDir": false,
@@ -160,21 +237,18 @@ export const _tree = {
           "component": () => import('../src/pages/workspaces/index.svelte').then(m => m.default)
         }
       ],
-      "isLayout": true,
-      "isReset": true,
+      "isLayout": false,
+      "isReset": false,
       "isIndex": false,
       "isFallback": false,
       "isPage": false,
-      "importPath": "../src/pages/workspaces/_reset.svelte",
       "ownMeta": {},
       "meta": {
         "recursive": true,
         "preload": false,
         "prerender": true
       },
-      "path": "/workspaces",
-      "id": "_workspaces__reset",
-      "component": () => import('../src/pages/workspaces/_reset.svelte').then(m => m.default)
+      "path": "/workspaces"
     }
   ],
   "isLayout": true,
