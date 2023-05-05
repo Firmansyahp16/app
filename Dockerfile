@@ -3,7 +3,7 @@ FROM node:12 AS build
 WORKDIR /app
 
 COPY package.json ./
-COPY package-lock.json ./
+COPY pnpm-lock.yaml ./
 RUN pnpm install
 COPY . ./
 RUN pnpm run build
